@@ -7,7 +7,7 @@ using Xamarin.Forms;
 
 namespace PrismEpub.Views
 {
-    public partial class MainPage : ContentPage
+    public partial class MainPage : CarouselPage
     {
         public MainPage()
         {
