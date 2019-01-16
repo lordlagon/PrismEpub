@@ -15,6 +15,26 @@ namespace PrismEpub.Views
         public BookPage()
         {
             InitializeComponent();
+
+            GetFrame(this.texto);
+
+            
+           
+        }
+
+        private void GetFrame(Label frame)
+        {
+            
+        }
+
+        private void Texto_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
+        {
+
+        }
+
+        private void Frame_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
+        {
+            
         }
     }
 }
