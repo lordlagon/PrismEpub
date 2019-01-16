@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace PrismEpub.Models
+﻿namespace Epub.Epub
 {
     public enum EpubContentType
     {

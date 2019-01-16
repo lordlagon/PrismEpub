@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace PrismEpub.Models
+namespace Epub.Epub
 {
     public class EpubContent
     {

@@ -1,4 +1,4 @@
-﻿namespace PrismEpub.Models
+﻿namespace Epub.Epub
 {
     public class EpubTextContentFile : EpubContentFile
     {

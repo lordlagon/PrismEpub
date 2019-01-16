@@ -1,6 +1,6 @@
-﻿namespace PrismEpub.Models
+﻿namespace Epub.Epub
 {
-    public class EpubContentFile
+    public abstract class EpubContentFile
     {
         public string FileName { get; set; }
         public EpubContentType ContentType { get; set; }

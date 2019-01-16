@@ -1,6 +1,6 @@
-﻿using PrismEpub.Schema;
+﻿using Epub.Epub.Schema;
 
-namespace PrismEpub.Models
+namespace Epub.Epub
 {
     public class EpubSchema
     {
