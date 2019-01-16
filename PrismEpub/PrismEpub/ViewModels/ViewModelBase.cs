@@ -18,9 +18,9 @@ namespace PrismEpub.ViewModels
             set { SetProperty(ref _title, value); }
         }
 
-        public ViewModelBase(INavigationService navigationService)
+        public ViewModelBase(INavigationService _navigationService)
         {
-            NavigationService = navigationService;
+            NavigationService = _navigationService;
         }
 
         public virtual void OnNavigatedFrom(INavigationParameters parameters)

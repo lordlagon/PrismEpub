@@ -32,6 +32,7 @@ namespace PrismEpub
             containerRegistry.RegisterForNavigation<MainPage, MainPageViewModel>();
             containerRegistry.RegisterForNavigation<BookPage, BookPageViewModel>();
 
+            containerRegistry.RegisterForNavigation<PrismContentPage1, PrismContentPage1ViewModel>();
         }
     }
 }

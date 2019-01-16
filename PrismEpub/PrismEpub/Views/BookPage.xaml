@@ -5,11 +5,21 @@
              Title="{Binding Title}"
               >
     <ContentPage.Content>
-        <StackLayout Padding="10">
-            <Frame x:Name="frame" HeightRequest="100" IsTabStop="True"  >
-                <Label x:Name="texto" Text="{Binding Texto}" LineBreakMode="WordWrap" PropertyChanged="Texto_PropertyChanged" MaxLines="5"/>
+        <StackLayout Padding="10"  >
+            <Frame x:Name="frame" HeightRequest="100" IsTabStop="False" HasShadow="False" >
+                <Frame.GestureRecognizers>
+                    <SwipeGestureRecognizer Direction="Left" Command="{Binding ProfileCommand}">
+                        
+                    </SwipeGestureRecognizer>
+                </Frame.GestureRecognizers>
                 
+                    <Label x:Name="texto" Text="{Binding Texto}"   LineBreakMode="WordWrap" PropertyChanging="Texto_PropertyChanging"   >
+                     </Label>
 
+
+            </Frame>
+            <Frame x:Name="frame2" HeightRequest="100">
+                <Label  Text="texto"/>
             </Frame>
             
         </StackLayout>

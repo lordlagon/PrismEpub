@@ -18,23 +18,31 @@ namespace PrismEpub.Views
 
             GetFrame(this.texto);
 
+          //  frame.ch
             
-           
-        }
 
-        private void GetFrame(Label frame)
-        {
-            
-        }
 
-        private void Texto_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
-        {
 
         }
 
-        private void Frame_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
+        private void GetFrame(Label texto)
         {
             
+            var l = texto.Text;
+
+            var id = texto.Id;
+
+            var text = (frame.Children.Where(x => x.Id == id).FirstOrDefault() as Label).Text;
+
+            
+        }
+
+       
+
+        private void Texto_PropertyChanging(object sender, PropertyChangingEventArgs e)
+        {
+            GetFrame((Label)sender);
+
         }
     }
 }
