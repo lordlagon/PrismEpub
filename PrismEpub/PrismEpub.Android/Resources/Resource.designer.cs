@@ -4925,6 +4925,9 @@ namespace PrismEpub.Droid
 			// aapt resource value: 0x7f0a0046
 			public const int hide_bottom_view_on_scroll_behavior = 2131361862;
 			
+			// aapt resource value: 0x7f0a004e
+			public const int library_name = 2131361870;
+			
 			// aapt resource value: 0x7f0a0000
 			public const int mr_button_content_description = 2131361792;
 			

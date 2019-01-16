@@ -17,7 +17,18 @@ namespace PrismEpub.Droid
             base.OnCreate(bundle);
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
-            LoadApplication(new App(new AndroidInitializer()));
+           LoadApplication(new App(new AndroidInitializer()));
+            /*LoadApplication(UXDivers.Gorilla.Droid.Player.UseApplication(new App(new AndroidInitializer()), this,
+                
+                 
+                 new UXDivers.Gorilla.Config("Good Gorilla")
+                   // Register UXDivers Effects assembly
+                   .RegisterAssembly(typeof(UXDivers.Effects.Effects).Assembly)
+                   // FFImageLoading.Transformations
+                   .RegisterAssemblyFromType<FFImageLoading.Transformations.BlurredTransformation>()
+                   // FFImageLoading.Forms
+                   .RegisterAssemblyFromType<FFImageLoading.Forms.CachedImage>()
+                 ));*/
         }
     }
 
